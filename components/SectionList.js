@@ -150,45 +150,6 @@ export default class SectionList extends Component {
   }
 }
 
-SectionList.propTypes = {
-
-  /**
-   * A component to render for each section item
-   */
-  component: PropTypes.func,
-
-  /**
-   * Function to provide a title the section list items.
-   */
-  getSectionListTitle: PropTypes.func,
-
-  /**
-   * Function to be called upon selecting a section list item
-   */
-  onSectionSelect: PropTypes.func,
-
-  /**
-   * The sections to render
-   */
-  sections: PropTypes.array.isRequired,
-
-  /**
-   * A style to apply to the section list container
-   */
-  style: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.object,
-  ]),
-
-  /**
-   * Text font size
-   */
-  fontStyle: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.object,
-  ]),
-};
-
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',

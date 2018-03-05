@@ -44,24 +44,3 @@ const styles = StyleSheet.create({
     paddingLeft: 2
   }
 });
-
-SectionHeader.propTypes = {
-
-  /**
-   * The id of the section
-   */
-  sectionId: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.string
-  ]),
-
-  /**
-   * A component to render for each section item
-   */
-  component: PropTypes.func,
-
-  /**
-   * A function used to propagate the root nodes handle back to the parent
-   */
-  updateTag: PropTypes.func
-};
